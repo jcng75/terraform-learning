@@ -15,4 +15,5 @@ resource "aws_vpc" "myvpc2" {
 Say we have an exisiting VPC already configured using the console (EX: vpc-03db7c242cd8c8929)
 We also have a vpc already deployed using terraform (myvpc)
 If we were to run the command above (terraform import ...), we can import the already created vpc into our terraform code
+This way when we call terraform destroy it will delete BOTH of them
 */
